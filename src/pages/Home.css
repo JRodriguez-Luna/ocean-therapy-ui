@@ -1,7 +1,7 @@
 .home--container {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 56px;
 }
 
 .home--row {
@@ -10,4 +10,45 @@
 
 .home--column {
     flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.logo-title {
+    gap: 5px;
+}
+
+.title--text {
+    color: #0A4C70;
+    font-size: 1.5rem;
+}
+
+.text-m {
+    font-weight: 500;
+}
+
+/* Nav */
+.gap {
+    gap: 31px;
+}
+
+nav {
+    color: #0A4C70;
+}
+
+/* Booking Button */
+.button--quick-click {
+    width: 182px;
+    height: 36px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1A7FA8;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
 }
