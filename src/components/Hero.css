@@ -35,11 +35,11 @@
 .text-img {
     position: absolute;
     color: white;
-    left: 50px;
-    font-size: 1.5rem;
+    left: 80px; /* Aligns with Header */
+    font-size: 1.7rem;
     font-weight: 100;
 }
 
 .welcome-title {
-    font-size: 3rem;
+    font-size: 4rem;
 }
