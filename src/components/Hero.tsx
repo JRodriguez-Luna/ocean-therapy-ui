@@ -1,4 +1,5 @@
 import './Hero.css'
+import { Button } from './Button'
 
 export function Hero() {
     return (
@@ -12,6 +13,10 @@ export function Hero() {
                 </div>
                 <div className='hero--row'>
                     <p>Helping you navigate life's waves with compassion and expertise</p>
+                </div>
+                <div className='hero--row'>
+                    <Button>Book Now</Button>
+                    <Button style={{borderColor: 'white'}}>Learn More</Button>
                 </div>
             </div>
         </div>

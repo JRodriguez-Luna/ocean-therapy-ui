@@ -29,6 +29,7 @@
 }
 
 .hero--column-half {
+    flex-direction: column;
     width: 50%;
 }
 
@@ -38,8 +39,18 @@
     left: 80px; /* Aligns with Header */
     font-size: 1.7rem;
     font-weight: 100;
+    height: auto;
 }
 
 .welcome-title {
     font-size: 4rem;
+}
+
+.c-button {
+    width: 10rem;
+    height: 3rem;
+    margin-right: 5px;
+    border-radius: 6px;
+    color: #0A4C70;
+    border: none;
 }
