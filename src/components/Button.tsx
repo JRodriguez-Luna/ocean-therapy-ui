@@ -1,23 +1,36 @@
-export function Button({ style = {backgroundColor: 'white', color: '#0A4C70', borderColor: 'none', border: 'none'}, className = '', children }: React.ComponentProps<'div'>) {
-    // transparent + white border + white text
-    if (style.borderColor === 'white') {
-        style.background = 'none';
-        style.color = 'white';
-        style.border = '1px solid white';
-    }
-    
-    // transparent + blue border + blue text
-    if (style.borderColor === '#0A4C70') {
-        style.background = 'none';
-        style.color = '#0A4C70';
-        style.border = '1px solid #0A4C70';
-    }
+type ButtonVarients = 'primary' | 'inverted' | 'outline' | 'inverted-outline';
 
-    // blue background + blue text
-    if (style.backgroundColor === '#0A4C70') {
-        style.border = 'none';
-        style.color = '#0A4C70';
+type ButtonProps = {
+    variant?: ButtonVarients;
+    className?: string;
+    children?: string;
+}
+
+const colors: Record<ButtonVarients, React.CSSProperties> = {
+    'primary': {
+        backgroundColor: 'white',
+        color: '#0A4C70',
+        border: 'none'
+    },
+    'inverted': {
+        borderColor: '#0A4C70',
+        color: 'white',
+        border: 'none'
+    },
+    'outline': {
+        background: 'none',
+        color: 'white',
+        border: '1px solid white'
+    },
+    'inverted-outline': {
+        background: 'none',
+        color: '#0A4C70',
+        border: '1px solid #0A4C70'
     }
+}
+
+export function Button({ variant = 'primary', className, children }: ButtonProps) {
+    const style = colors[variant]
 
     return (
         <button style={{
@@ -27,6 +40,7 @@ export function Button({ style = {backgroundColor: 'white', color: '#0A4C70', bo
             marginRight: '5px',
             borderRadius: '6px'}} 
             name={children?.toString().trim()}
-            className={className}>{children}</button>
+            className={className}
+            >{children}</button>
     )
 }

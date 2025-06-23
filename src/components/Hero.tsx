@@ -16,7 +16,7 @@ export function Hero() {
                 </div>
                 <div className='hero--row'>
                     <Button>Book Now</Button>
-                    <Button style={{borderColor: 'white'}}>Learn More</Button>
+                    <Button variant='outline'>Learn More</Button>
                 </div>
             </div>
         </div>
