@@ -15,8 +15,8 @@ export function Hero() {
                     <p>Helping you navigate life's waves with compassion and expertise</p>
                 </div>
                 <div className='hero--row'>
-                    <Button>Book Now</Button>
-                    <Button variant='outline'>Learn More</Button>
+                    <Button className='hover--effect'>Book Now</Button>
+                    <Button className='hover--effect'variant='outline'>Learn More</Button>
                 </div>
             </div>
         </div>

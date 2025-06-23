@@ -46,11 +46,7 @@
     font-size: 4rem;
 }
 
-.c-button {
-    width: 10rem;
-    height: 3rem;
-    margin-right: 5px;
-    border-radius: 6px;
-    color: #0A4C70;
-    border: none;
+.hover--effect:hover {
+    opacity: 0.9;
+    transition: all ease-in-out;
 }

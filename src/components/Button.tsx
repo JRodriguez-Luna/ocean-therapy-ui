@@ -38,7 +38,8 @@ export function Button({ variant = 'primary', className, children }: ButtonProps
             width: '10rem', 
             height: '3rem', 
             marginRight: '5px',
-            borderRadius: '6px'}} 
+            borderRadius: '6px',
+            cursor: 'pointer'}} 
             name={children?.toString().trim()}
             className={className}
             >{children}</button>
