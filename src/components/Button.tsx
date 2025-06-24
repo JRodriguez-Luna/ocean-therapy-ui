@@ -13,7 +13,7 @@ const colors: Record<ButtonVarients, React.CSSProperties> = {
         border: 'none'
     },
     'inverted': {
-        borderColor: '#0A4C70',
+        background: '#0A4C70',
         color: 'white',
         border: 'none'
     },
